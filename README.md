@@ -34,7 +34,7 @@ Rent-anything/
 ├── details.php        # Product details
 ├── cart.php           # Shopping cart
 ├── checkout.php       # Checkout
-├── renteverything.sql # Database schema and sample data
+├── database/        # renteverything.sql: schema and sample data
 └── LICENSE
 ```
 
@@ -42,17 +42,17 @@ The database has these tables: `cart`, `categories`, `customers`, `customer_orde
 
 ## Getting Started
 
-Step 1. Install a local PHP and MySQL stack such as XAMPP, then clone this repository into its web root (for example `htdocs`):
+Step 1. Install a local PHP and MySQL stack such as XAMPP, then clone this repository into its web root (for example `htdocs`). The folder must be named `renteverything`, because the admin link in the pages expects that path:
 
 ```bash
-git clone https://github.com/malehaICK/Rent-anything.git
+git clone https://github.com/malehaICK/Rent-anything.git renteverything
 ```
 
-Step 2. Create a MySQL database and import the schema from `renteverything.sql`, for example with phpMyAdmin.
+Step 2. Create a MySQL database named `renteverything` and import the schema from `database/renteverything.sql`, for example with phpMyAdmin.
 
 Step 3. Open `includes/db.php` and set the host, user, password and database name to match your local setup.
 
-Step 4. Start Apache and MySQL, then open `http://localhost/Rent-anything/` in your browser.
+Step 4. Start Apache and MySQL, then open `http://localhost/renteverything/` in your browser.
 
 ## Screenshots
 
